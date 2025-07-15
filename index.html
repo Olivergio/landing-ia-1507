@@ -1,158 +1,29 @@
 
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>IA para Pequenos Negócios</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: #f4f4f7;
-      color: #1f2937;
-    }
-    header {
-      background: linear-gradient(to right, #111827, #1f2937);
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    h1 {
-      font-size: 36px;
-      margin-bottom: 10px;
-    }
-    h2 {
-      color: #111827;
-      font-size: 28px;
-    }
-    p {
-      font-size: 18px;
-      line-height: 1.6;
-    }
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    .cta-button {
-      display: inline-block;
-      background: #ff4500;
-      color: white;
-      padding: 16px 32px;
-      border-radius: 8px;
-      font-size: 18px;
-      font-weight: bold;
-      text-decoration: none;
-      margin: 20px auto;
-      transition: all 0.3s;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    }
-    .cta-button:hover {
-      background: #e03d00;
-    }
-    .section {
-      background: white;
-      margin: 40px 0;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-      padding: 30px;
-    }
-    footer {
-      text-align: center;
-      font-size: 14px;
-      color: #6b7280;
-      padding: 40px 20px;
-    }
-    #timer {
-      background: #fff3cd;
-      color: #856404;
-      padding: 15px;
-      text-align: center;
-      font-weight: bold;
-      font-size: 18px;
-    }
-  </style>
-</head>
-<body>
-  <div id="timer">⏳ Esta oferta expira em <span id="countdown">20:00</span> minutos.</div>
-
-  <header>
-    <h1>Pequeno, mas quer vender como os grandes?</h1>
-    <p>Descubra como automatizar marketing, atendimento e vendas usando inteligência artificial – sem precisar entender nada de tecnologia.</p>
-    <a href="https://pay.hotmart.com/P100830030V
-" class="cta-button">QUERO ACESSAR O GUIA AGORA</a>
-  </header>
-
-  <main class="container">
-    <div class="section">
-      <h2>Por que esse guia é diferente?</h2>
-      <p>Com 242 páginas práticas, este e-book vai direto ao ponto. Você aprenderá como usar IA para automatizar tarefas repetitivas, criar campanhas, responder clientes, gerar conteúdo e muito mais.</p>
-    </div>
-
-    <div class="section">
-      <h2>Você vai aprender a:</h2>
-      <ul>
-        <li>Criar conteúdos com IA em minutos</li>
-        <li>Automatizar atendimento no WhatsApp e Instagram</li>
-        <li>Montar campanhas de marketing com IA</li>
-        <li>Economizar tempo e escalar suas vendas</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>Oferta por tempo limitado</h2>
-      <p>De R$197 por apenas <strong>R$27</strong> para os 100 primeiros. Depois, o preço volta ao normal. Aproveite agora.</p>
-      <a href="https://pay.hotmart.com/P100830030V
-" class="cta-button">GARANTIR MEU GUIA</a>
-    </div>
-
-    <div class="section">
-      <h2>Garantia incondicional de 7 dias</h2>
-      <p>Se você não ficar satisfeito com o conteúdo, devolvemos 100% do seu dinheiro. Sem perguntas.</p>
-    </div>
-
-    <div class="section">
-      <h2>Dúvidas Frequentes</h2>
-      <p><strong>Preciso saber mexer em tecnologia?</strong><br/>Não. O guia é feito pra iniciantes. Basta seguir o passo a passo.</p>
-      <p><strong>Quando recebo o guia?</strong><br/>Imediatamente após a confirmação do pagamento.</p>
-      <p><strong>O conteúdo é atualizado?</strong><br/>Sim. Você terá acesso às atualizações futuras sem custo extra.</p>
-    </div>
-  </main>
-
-  <footer>
-    &copy; 2025 - Todos os direitos reservados.
-  </footer>
-
-  <script>
-    let totalSeconds = 20 * 60;
-    const countdown = document.getElementById("countdown");
-    setInterval(() => {
-      totalSeconds--;
-      const minutes = Math.floor(totalSeconds / 60).toString().padStart(2, "0");
-      const seconds = (totalSeconds % 60).toString().padStart(2, "0");
-      countdown.textContent = `${minutes}:${seconds}`;
-      if (totalSeconds <= 0) countdown.textContent = "00:00";
-    }, 1000);
-
-    const compradores = [
-      "João de São Paulo", "Mariana de BH", "Carlos do Rio",
-      "Ana de Salvador", "Lucas de Curitiba", "Fernanda de Fortaleza"
-    ];
-    let index = 0;
-    setInterval(() => {
-      const popup = document.createElement("div");
-      popup.textContent = compradores[index % compradores.length] + " acabou de adquirir o guia.";
-      Object.assign(popup.style, {
-        position: "fixed", bottom: "30px", left: "30px", background: "#1f2937",
-        color: "#fff", padding: "10px 20px", borderRadius: "8px",
-        boxShadow: "0 4px 8px rgba(0,0,0,0.2)", zIndex: 9999
-      });
-      document.body.appendChild(popup);
-      setTimeout(() => popup.remove(), 5000);
-      index++;
-    }, 20000);
-  </script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IA para Pequenos Negócios</title>
+    <!-- Meta Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '2980737485439828');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=2980737485439828&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
 </html>
